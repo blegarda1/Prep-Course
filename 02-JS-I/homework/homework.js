@@ -41,13 +41,15 @@ function multiplica(x, y) {
 }
 
 function divide(x, y) {
-  x / y;
+  return x / y;
 }
 
 function sonIguales(x, y) {
-  if (x = y){
+  x = 7;
+  y= 7;
+  if(x = y) {
     return true;
-  } else (x != y ){
+  } else {
     return false;
   }
 }
