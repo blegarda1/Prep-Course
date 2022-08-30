@@ -1,12 +1,8 @@
-// En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
-// Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "Hola";
 
-// Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 11;
 
-// Crea una variable booleana:
 const nuevoBool = false;
 
 const nuevaResta = 10 - 5 === 5;
@@ -124,10 +120,6 @@ function numeroRandom() {
 }
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
-  //Si el número es positivo, devolver ---> "Es positivo"
-  //Si el número es negativo, devolver ---> "Es negativo"
-  //Si el número es 0, devuelve false
   if (numero > 0) {
     return 'Es postivo';
   } else if (numero < 0) {
