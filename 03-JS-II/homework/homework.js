@@ -91,13 +91,7 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
-  //La función recibe tres números distintos. 
-  //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
-  //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
-  //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
-  //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1===0 || num2 ===0 || num3===0) {
+  if (num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error"
   } if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos"
@@ -123,29 +117,38 @@ function esPrimo(numero) {
   return true;
 }
 function esVerdadero(valor){
-  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
-  //si su valor es true y “Soy falso” si su valor es false.
-  //Escribe tu código aquí
-
+  if (valor === true) {
+    return 'Soy verdadero'
+  } else if (valor === false) {
+    return 'Soy falso'
+  }
 }
 
-function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
-  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+function tablaDelSeis(){  
+let resultadoTabla=[]
+  for(i = 0; i < 11; i++){
+  resultadoTabla.push(6*i)
+  }
+  return resultadoTabla
 }
 
 function tieneTresDigitos(numero){
-  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
-  //Escribe tu código aquí
-  
+  if(numero > 99 && numero < 1000){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function doWhile(numero) {
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
-  //Retornar el valor final.
-  //Usar el bucle do ... while.
+let a = numero;
+let i = 0;
+do {
+  i = i + 1;
+  a = a + 5;
+} while (i < 8){
+  return a;
+}
 }
 
 
